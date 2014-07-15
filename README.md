@@ -208,7 +208,7 @@ sass/
 [Reference](http://www.sitepoint.com/architecture-sass-project/)
 
 
-<a name="organization"></a>
+<a name="resets"></a>
 ## 10. Resets
 
 * Include normalize in every project as a foundation.
