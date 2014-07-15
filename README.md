@@ -1,4 +1,4 @@
-# CSS Style Guidelines 
+# CSS Style Guide
 
 
 ## Table of contents
