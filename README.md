@@ -1,4 +1,5 @@
-canvas-style-guide
-==================
+###Style Guide
 
-Draft for Canvas Style Guide
+#CSS
+
+##Code Standards
