@@ -6,7 +6,7 @@
 1.  [Principles](#principles)
 2.  [Whitespace](#whitespace)
 3.  [Formatting](#formatting)
-4.  [Naming Convensitons](#naming-conventions)
+4.  [Naming Conventions](#naming-conventions)
 5.  [Comments](#comments)
 6.  [Overrides](#overrides)
 7.  [Responsive](#responsive)
@@ -33,6 +33,7 @@
   with many contributors.
 * When trying to fix an issue, consider removing code before adding to it.
 * It is important to strictly enforce the agreed-upon standards.
+* Carefully re-evaluate these standards when better systems and conventions are available. 
 
 
 <a name="whitespace"></a>
@@ -58,7 +59,7 @@
 * Try to limit use of shorthand declarations to instances where you must explicitly set 
   all the available values.
 * Arrange your selector’s properties in alphabetical order. This will ensure a simple 
-  and intuitive arrangement that is easily recognisable, simple to locate properties, 
+  and intuitive arrangement that is easily recognizable, simple to locate properties, 
   and easy to recognize duplicates on long selectors. Sublime: ctrl + F5
 * Use px for font-size, because it offers absolute control over text. 
 * Use unit-less line-height. `line-height: 1.5;`
@@ -94,12 +95,12 @@
 <a name="naming-conventions"></a>
 ## 4. Naming Conventions
 
-* Use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming convention.
+* Use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming conventions.
 * Provide clear names for your selectors.
 * Strive to create loosely coupled, modular code that can be easily reused regardless of 
   its container or contents.
 * Do not use ID’s. The negligible performance difference is not worth the limitations.
-* When a class is applied or used as a selector for JavaScript, prefix the classwith js-.
+* When a class is applied or used as a selector for JavaScript, prefix the class with js-.
 * Never reference js- prefixed class names from CSS files. js- are used exclusively from JS files.
 * Use the is- prefix for state rules that are shared between CSS and JS.
 * Make JS selector’s names clearly represent their function. `.js-toggle-menu`.
