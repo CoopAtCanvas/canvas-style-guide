@@ -215,7 +215,9 @@ sass/
 * When possible `box-sizing: border-box` as a global reset.
 
 ```
-/* Vanilla CSS */
+/* Vanilla CSS
+   __________________________________________________________________________ */
+   
 html {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -228,7 +230,8 @@ html {
   box-sizing: inherit;
 }
 
-/* SCSS and Compass */
+/* SCSS and Compass
+   __________________________________________________________________________ */
 
 html {
   @include box-sizing(border-box);
