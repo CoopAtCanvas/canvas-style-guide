@@ -292,7 +292,25 @@ html {
 ```
 
 
+<a name="sources"></a>
+## 11. Sources
 
+
+#### Style Guide Examples
+
+* [GitHub](https://github.com/styleguide/css)
+* [Idiomatic](https://github.com/necolas/idiomatic-css)
+* [Google](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
+* [ThinkUp](https://github.com/ginatrapani/ThinkUp/wiki/Code-Style-Guide:-CSS)
+* [CSS Wizardry](http://csswizardry.com/2012/04/my-html-css-coding-style/)
+* [Wordpress](http://make.wordpress.org/core/handbook/coding-standards/css/)
+
+#### Style Guide Examples
+
+* [BEM](http://bem.info/) / [BEM Guide](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+* [SMACSS](http://smacss.com/)
+* [Atomic CSS](http://bradfrostweb.com/blog/post/atomic-web-design/)
+* [OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
 
 
 
