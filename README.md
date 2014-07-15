@@ -308,7 +308,7 @@ html {
 * [CSS Wizardry](http://csswizardry.com/2012/04/my-html-css-coding-style/)
 * [Wordpress](http://make.wordpress.org/core/handbook/coding-standards/css/)
 
-#### Style Guide Examples
+#### Style Patterns
 
 * [BEM](http://bem.info/) / [BEM Guide](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 * [SMACSS](http://smacss.com/)
