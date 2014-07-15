@@ -66,7 +66,7 @@
   its container or contents.
 * Do not use ID’s. The negligible performance difference is not worth the limitations.
 * When a classing is applied or used as a selector for JavaScript, use a class prefix with 
-  js-. Also make the selector’s name clearly represent it’s function. Example: “.js-toggle-menu”.
+  js-. Also make the selector’s name clearly represent it’s function. `.js-toggle-menu`.
 * Avoid adding additional styles to .js- prefixed selectors that are not part of their function 
 
 
@@ -75,7 +75,7 @@
 
 * Well commented code is extremely important. Take time provide information about your 
   code, it’s limitations, and any non-obvious information. 
-* Use // instead of /* */ on block comments. 
+* Use `//` instead of `/* */` on block comments. 
 * Always add an introductory comment to all partials to provide clarity about the files 
   contents and purpose.
 * Use hierarchical comments to divide and organize your files.
@@ -120,9 +120,9 @@
 <a name="overrides"></a>
 ## 5. Overrides
 
-* Avoid using '!important' unless absolutely necessary.
+* Avoid using `!important` unless absolutely necessary.
 * Try not to override pre-existing styles, but rather provide a unique selector 
   or rethink your structure and it's modularity.
-* Try to avoid chaining selectors '.myselector.another.and-another' but 
+* Try to avoid chaining selectors `.myselector.another.and-another` but 
   rather create a new specific class.
 
