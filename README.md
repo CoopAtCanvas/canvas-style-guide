@@ -12,6 +12,7 @@
 7. [Responsive](#responsive)
 8. [SCSS](#SCSS)
 9. [File Organization](#organization)
+10. [Resets](#resets)
 
 
 <a name="principles"></a>
@@ -152,9 +153,9 @@
 
 
 <a name="organization"></a>
-## 8. File Organization
-[Reference](http://www.sitepoint.com/architecture-sass-project/)
+## 9. File Organization
 
+#### Structure
 ```
 sass/ 
 | 
@@ -204,6 +205,40 @@ sass/
 | 
 `– style.scss             # primary Sass file
 ```
+[Reference](http://www.sitepoint.com/architecture-sass-project/)
+
+
+<a name="organization"></a>
+## 10. Resets
+
+* Include normalize in every project as a foundation.
+* When possible `box-sizing: border-box` as a global reset.
+
+```
+/* Vanilla CSS */
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+/* SCSS and Compass */
+
+html {
+  @include box-sizing(border-box);
+}
+```
+
+
+
+
+
 
 
 
