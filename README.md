@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-1. [General principles](#principles)
+1. [Principles](#principles)
 2. [Whitespace](#whitespace)
 
 <a name="principles"></a>
