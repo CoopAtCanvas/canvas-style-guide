@@ -1,4 +1,4 @@
-# CSS Code Standards
+# CSS Standards
 
 
 ## Table of contents
