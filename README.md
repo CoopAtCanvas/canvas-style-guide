@@ -59,7 +59,7 @@
 <a name="naming-conventions"></a>
 ## 4. Naming Conventions
 
-* Use [BEM](Ref: http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming convention.
+* Use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming convention.
 * Provide clear names for your selectors.
 * Strive to create loosely coupled, modular code that can be easily reused regardless of 
   its container or contents.
