@@ -36,8 +36,9 @@
 <a name="whitespace"></a>
 ## 2. Whitespace
 
-* Configure your IDE to use soft-tabs with a two space indent. Spaces are the only 
-  way to guarantee code renders the same in any person's environment.
+* Configure your IDE to use soft-tabs with a two space indent. Spaces guarantee code 
+  will renders the same all environment.
+* Trim trailing white spaces.
 * Add a space after the : in property declarations.
 * Separate each ruleset by a blank line.
 * Place individual selectors on a single line.
