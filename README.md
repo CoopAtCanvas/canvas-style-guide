@@ -166,6 +166,34 @@
 * found and modified. If Sprockets is available combine all media queries for production 
   with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.)
 
+```
+// Set Variables
+$break-small: 24em;
+$break-large: 46.8em;
+
+
+// Create Mixin
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+// Embed Query
+.profile-pic {
+  float: left;
+  width: 250px;
+  @include respond-to(handhelds)      { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens)   { float: none; }
+}
+```
 
 <a name="scss"></a>
 ## 8. SCSS
