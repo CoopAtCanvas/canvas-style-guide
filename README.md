@@ -58,9 +58,9 @@
 * Arrange your selector’s properties in alphabetical order. This will ensure a simple 
   and intuitive arrangement that is easily recognisable, simple to locate properties, 
   and easy to recognize duplicates on long selectors. Sublime: ctrl + F5
-* Use px for font-size, because it offers absolute control over text. Additionally, 
-  unit-less line-height is preferred because it does not inherit a percentage value of 
-  its parent element, but instead is based on a multiplier of the font-size.
+* Use px for font-size, because it offers absolute control over text. 
+* Use unit-less line-height. `line-height: 1.5;`
+* Try to use ems for all other values.
 * Use double (“”) rather than single (‘’) quotation marks
 
 ```
@@ -73,14 +73,12 @@
   line-height: 1.5;
   margin: 0;
   padding-bottom: 0;
-  width: 100%;
   @include mixin(example-mixin);
   
   .example__component {
     background: #AAA;
     display: block;
-    width: 100%;
-    
+
     &:hover {
       background: #CCC;
     }
