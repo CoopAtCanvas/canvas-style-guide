@@ -10,6 +10,8 @@
 5. [Comments](#comments)
 6. [Overrides](#overrides)
 7. [Responsive](#responsive)
+8. [SCSS](#SCSS)
+9. [File Organization](#organization)
 
 
 <a name="principles"></a>
@@ -136,4 +138,74 @@
 * Always specify your media query breakpoints via variables.
 * Nest all media queries inside the original selector, allow them to be easily 
 * found and modified. If Sprockets is available combine all media queries for production 
-  with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.) 
+  with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.)
+
+
+<a name="scss"></a>
+## 8. SCSS
+* Use SCSS syntax and never SASS
+* Avoid unnecessary nesting.
+* Keep your nesting limited to 3 levels.
+* Keep SCSS partials limited to 500 lines.
+* Always place `@extend` statements on the first lines of a declaration block.
+* Always place `@include` statements on the last lines of a declaration block.
+
+
+<a name="organization"></a>
+## 8. File Organization
+[Reference](http://www.sitepoint.com/architecture-sass-project/)
+
+```
+sass/ 
+| 
+|– base/ 
+|   |– _reset.scss       # Reset/normalize 
+|   |– _typography.scss  # Typography rules 
+|   ...                  # Etc… 
+| 
+|– components/ 
+|   |– _buttons.scss     # Buttons 
+|   |– _carousel.scss    # Carousel 
+|   |– _cover.scss       # Cover 
+|   |– _dropdown.scss    # Dropdown 
+|   |– _navigation.scss  # Navigation 
+|   ...                  # Etc… 
+| 
+|– helpers/ 
+|   |– _variables.scss   # Sass Variables 
+|   |– _functions.scss   # Sass Functions 
+|   |– _mixins.scss      # Sass Mixins 
+|   |– _helpers.scss     # Class & placeholders helpers 
+|   ...                  # Etc… 
+| 
+|– layout/ 
+|   |– _grid.scss        # Grid system 
+|   |– _header.scss      # Header 
+|   |– _footer.scss      # Footer 
+|   |– _sidebar.scss     # Sidebar 
+|   |– _forms.scss       # Forms 
+|   ...                  # Etc… 
+| 
+|– pages/ 
+|   |– _home.scss        # Home specific styles 
+|   |– _contact.scss     # Contact specific styles 
+|   ...                  # Etc… 
+| 
+|– themes/ 
+|   |– _theme.scss       # Default theme 
+|   |– _admin.scss       # Admin theme 
+|   ...                  # Etc… 
+| 
+|– vendors/ 
+|   |– _bootstrap.scss   # Bootstrap 
+|   |– _jquery-ui.scss   # jQuery UI 
+|   ...                  # Etc… 
+| 
+| 
+`– style.scss             # primary Sass file
+```
+
+
+
+
+
