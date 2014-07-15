@@ -62,6 +62,7 @@
 * Use double (“”) rather than single (‘’) quotation marks
 
 ```
+// Example spacing, using BEM syntax
 .example {
   @extend .an-extention;
   display: block;
@@ -171,7 +172,6 @@
 $break-small: 24em;
 $break-large: 46.8em;
 
-
 // Create Mixin
 @mixin respond-to($media) {
   @if $media == handhelds {
@@ -186,11 +186,11 @@ $break-large: 46.8em;
 }
 
 // Embed Query
-.profile-pic {
+.example-class {
   float: left;
   width: 250px;
   @include respond-to(handhelds)      { width: 100% ;}
-  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(medium-screens) { width: 50%; }
   @include respond-to(wide-screens)   { float: none; }
 }
 ```
