@@ -33,7 +33,8 @@
   with many contributors.
 * When trying to fix an issue, consider removing code before adding to it.
 * It is important to strictly enforce the agreed-upon standards.
-* Carefully re-evaluate these standards when better systems and conventions are available. 
+* Carefully re-evaluate these standards when better systems and conventions are available.
+* If it is not possible to defend and support a standard, it should be removed.
 
 
 <a name="whitespace"></a>
