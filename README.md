@@ -92,6 +92,9 @@
 <a name="naming-conventions"></a>
 ## 4. Naming Conventions
 
+> A common argument against BEM is that it’s ugly; I dare say that if you shy away from code based purely on its looks then   you’re often missing the point. Unless the code becomes unnecessarily difficult to maintain, or genuinely more difficult   to read, then perhaps you do need to think twice before using it, but if it ‘just looks odd’ but has a valid purpose,      then it should definitely be fully considered before writing it off.
+> I agree that BEM does look weird, but the power it brings far outweighs any negatives to do with its appearance by an      order of magnitude… -  Nicolas Gallagher
+
 * Use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming convention.
 * Provide clear names for your selectors.
 * Strive to create loosely coupled, modular code that can be easily reused regardless of 
