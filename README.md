@@ -52,7 +52,7 @@
 ## 3. Formatting
 
 * Always use #HEX color codes, unless using rgb/rgba.
-* Do not specify units for 0 values.
+* Do not specify units for 0 values. `margin: 0;`
 * Try to limit use of shorthand declarations to instances where you must explicitly set 
   all the available values.
 * Arrange your selector’s properties in alphabetical order. This will ensure a simple 
@@ -60,7 +60,7 @@
   and easy to recognize duplicates on long selectors. Sublime: ctrl + F5
 * Use px for font-size, because it offers absolute control over text. 
 * Use unit-less line-height. `line-height: 1.5;`
-* Try to use ems for all other values.
+* Try to use ems for all other values. `width: 40em;`
 * Use double (“”) rather than single (‘’) quotation marks
 
 ```
@@ -311,10 +311,3 @@ html {
 * [SMACSS](http://smacss.com/)
 * [Atomic CSS](http://bradfrostweb.com/blog/post/atomic-web-design/)
 * [OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
-
-
-
-
-
-
-
