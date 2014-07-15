@@ -9,6 +9,7 @@
 4. [Naming Convensitons](#naming-conventions)
 5. [Comments](#comments)
 6. [Overrides](#overrides)
+7. [Responsive](#responsive)
 
 
 <a name="principles"></a>
@@ -118,7 +119,7 @@
 ```
 
 <a name="overrides"></a>
-## 5. Overrides
+## 6. Overrides
 
 * Avoid using `!important` unless absolutely necessary.
 * Try not to override pre-existing styles, but rather provide a unique selector 
@@ -126,3 +127,13 @@
 * Try to avoid chaining selectors `.myselector.another.and-another` but 
   rather create a new specific class.
 
+
+<a name="responsive"></a>
+## 7. Responsive
+
+* Always build mobile first. This will greatly reduce the weight on mobile and 
+  significantly reduces necessary overrides through media queries.
+* Always specify your media query breakpoints via variables.
+* Nest all media queries inside the original selector, allow them to be easily 
+* found and modified. If Sprockets is available combine all media queries for production 
+  with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.) 
