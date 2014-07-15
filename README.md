@@ -150,7 +150,7 @@
 <a name="overrides"></a>
 ## 6. Overrides
 
-* Avoid using `!important` unless absolutely necessary.
+* Avoid using `!important` unless _absolutely necessary_.
 * Try not to override pre-existing styles, but rather provide a unique selector 
   or rethink your structure and it's modularity.
 * Try to avoid chaining selectors `.myselector.another.and-another` but 
