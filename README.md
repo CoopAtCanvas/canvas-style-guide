@@ -18,10 +18,12 @@
 <a name="principles"></a>
 ## 1. Principles
 
+
 > "Part of being a good steward to a successful project is realizing that
 > writing code for yourself is a Bad Idea™. If thousands of people are using
 > your code, then write your code for maximum clarity, not your personal
 > preference of how to get clever within the spec." - Idan Gazit
+
 
 * Don't try to prematurely optimize your code; keep it readable and understandable.
 * All code in any code-base should look like a single person typed it, even when 
@@ -56,9 +58,32 @@
   and easy to recognize duplicates on long selectors. Sublime: ctrl + F5
 * Use px for font-size, because it offers absolute control over text. Additionally, 
   unit-less line-height is preferred because it does not inherit a percentage value of 
-  its parent element, but instead is     based on a multiplier of the font-size.
-* Use ems for all other values.
+  its parent element, but instead is based on a multiplier of the font-size.
 * Use double (“”) rather than single (‘’) quotation marks
+
+```
+.example {
+  @extend .an-extention;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 0;
+  width: 100%;
+  @include mixin(example-mixin);
+  
+  .example__component {
+    background: #AAA;
+    display: block;
+    width: 100%;
+    
+    &:hover {
+      background: #CCC;
+    }
+  }
+}
+```
 
 
 <a name="naming-conventions"></a>
