@@ -114,36 +114,42 @@
 
 #### Example:
 
-```css
-/* ==========================================================================
-  
-   Section comment block: for specs or table of contents
-   
-   Project:	Exmaple Project
-   Version:	1.1
-   Last change:	05/06/2014
-   Primary use:	Examples
-   
-   ========================================================================== */
-   
-/* ==========================================================================
-   Section Introductory comment block: Standard
-   ========================================================================== */
+```
+//  ==========================================================================
+//
+//  Section comment block: for specs or table of contents
+//
+//  Project: Exmaple Project
+//  Version: 1.1
+//  Last change: 05/06/2014
+//  Primary use: Examples
+//
+//  ========================================================================== */
 
-/* Sub-section comment block
-   __________________________________________________________________________ */
-   
-/* 
- * Comment on multiple lines
- *
- * This is an Example of a long comment that
- * spans multiple line.
- *
- * Use this format for long descriptions and 
- * more detailed documentation 
- */
 
-/* Basic comment */
+//  ==========================================================================
+//  Section Introductory comment block: Standard
+//  ========================================================================== */
+
+
+//  Sub-section comment block
+//  __________________________________________________________________________ */
+
+
+//  ------------------------------------------
+//
+//  Comment on multiple lines
+//  
+//  This is an Example of a long comment that
+//  spans multiple line.
+//  
+//  Use this format for long descriptions and 
+//  more detailed documentation 
+//
+//  ------------------------------------------
+
+
+//  Basic comment
 ```
 
 <a name="overrides"></a>
