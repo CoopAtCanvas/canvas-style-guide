@@ -10,7 +10,7 @@
 5.  [Comments](#comments)
 6.  [Overrides](#overrides)
 7.  [Responsive](#responsive)
-8.  [SCSS](#SCSS)
+8.  [SCSS](#scss)
 9.  [File Organization](#organization)
 10. [Resets](#resets)
 11. [Sources](#sources)
