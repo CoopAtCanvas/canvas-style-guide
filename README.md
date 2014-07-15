@@ -13,6 +13,7 @@
 8. [SCSS](#SCSS)
 9. [File Organization](#organization)
 10. [Resets](#resets)
+11. [Sources](#Sources)
 
 
 <a name="principles"></a>
