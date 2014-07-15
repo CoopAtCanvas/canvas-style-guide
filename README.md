@@ -1,4 +1,4 @@
-#CSS Code Standards
+# CSS Code Standards
 
 
 ## Table of contents
@@ -6,11 +6,12 @@
 1. [Principles](#principles)
 2. [Whitespace](#whitespace)
 3. [Formatting](#formatting)
-4. [Formatting](#comments)
+4. [Naming Convensitons](#naming-conventions)
+5. [Comments](#comments)
 
 
 <a name="principles"></a>
-##1. Principles
+## 1. Principles
 
 > "Part of being a good steward to a successful project is realizing that
 > writing code for yourself is a Bad Idea™. If thousands of people are using
@@ -47,15 +48,29 @@
   all the available values.
 * Arrange your selector’s properties in alphabetical order. This will ensure a simple 
   and intuitive arrangement that is easily recognisable, simple to locate properties, 
-  and easy to recognize duplicates on     long selectors. Sublime: ctrl + F5
+  and easy to recognize duplicates on long selectors. Sublime: ctrl + F5
 * Use px for font-size, because it offers absolute control over text. Additionally, 
   unit-less line-height is preferred because it does not inherit a percentage value of 
   its parent element, but instead is     based on a multiplier of the font-size.
 * Use ems for all other values.
 * Use double (“”) rather than single (‘’) quotation marks
 
+
+<a name="naming-conventions"></a>
+## 4. Naming Conventions
+
+* Use [BEM](Ref: http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming convention.
+* Provide clear names for your selectors.
+* Strive to create loosely coupled, modular code that can be easily reused regardless of 
+  its container or contents.
+* Do not use ID’s. The negligible performance difference is not worth the limitations.
+* When a classing is applied or used as a selector for JavaScript, use a class prefix with 
+  js-. Also make the selector’s name clearly represent it’s function. Example: “.js-toggle-menu”.
+* Avoid adding additional styles to .js- prefixed selectors that are not part of their function 
+
+
 <a name="comments"></a>
-## 4. Comments
+## 5. Comments
 
 * Well commented code is extremely important. Take time provide information about your 
   code, it’s limitations, and any non-obvious information. 
@@ -67,12 +82,12 @@
 * It’s a good idea to configure your editor to provide you with shortcuts to output 
   agreed-upon comment patterns.
 
-###Example:
+### Example:
 
 ```css
 /* ==========================================================================
   
-   Section comment block: with example project specs
+   Section comment block: for specs or table of contents
    
    Project:	Exmaple Project
    Version:	1.1
@@ -81,15 +96,12 @@
    
    ========================================================================== */
    
-   
 /* ==========================================================================
-   Section Introductory comment block : Short
+   Section Introductory comment block: Standard
    ========================================================================== */
-
 
 /* Sub-section comment block
    __________________________________________________________________________ */
-   
    
 /* 
  * Comment on multiple lines
@@ -100,7 +112,6 @@
  * Use this format for long descriptions and 
  * more detailed documentation 
  */
-
 
 /* Basic comment */
 ```
