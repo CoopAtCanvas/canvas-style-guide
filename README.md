@@ -3,15 +3,15 @@
 
 ## Table of contents
 
-1. [Principles](#principles)
-2. [Whitespace](#whitespace)
-3. [Formatting](#formatting)
-4. [Naming Convensitons](#naming-conventions)
-5. [Comments](#comments)
-6. [Overrides](#overrides)
-7. [Responsive](#responsive)
-8. [SCSS](#SCSS)
-9. [File Organization](#organization)
+1.  [Principles](#principles)
+2.  [Whitespace](#whitespace)
+3.  [Formatting](#formatting)
+4.  [Naming Convensitons](#naming-conventions)
+5.  [Comments](#comments)
+6.  [Overrides](#overrides)
+7.  [Responsive](#responsive)
+8.  [SCSS](#SCSS)
+9.  [File Organization](#organization)
 10. [Resets](#resets)
 11. [Sources](#sources)
 
@@ -202,10 +202,11 @@ $break-large: 46.8em;
 
 <a name="scss"></a>
 ## 8. SCSS
-* Use SCSS syntax and never SASS
+* Use SCSS syntax and never SASS.
 * Avoid unnecessary nesting.
 * Keep your nesting limited to 3 levels.
 * Keep SCSS partials limited to 500 lines.
+* Avoid nesting more than 50 lines.
 * Always place `@extend` statements on the first lines of a declaration block.
 * Always place `@include` statements on the last lines of a declaration block.
 
