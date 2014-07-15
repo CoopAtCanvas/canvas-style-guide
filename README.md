@@ -55,15 +55,52 @@
 * Use double (“”) rather than single (‘’) quotation marks
 
 <a name="comments"></a>
-## 4. Comments 
+## 4. Comments
+
+* Well commented code is extremely important. Take time provide information about your 
+  code, it’s limitations, and any non-obvious information. 
+* Use // instead of /* */ on block comments. 
+* Always add an introductory comment to all partials to provide clarity about the files 
+  contents and purpose.
+* Use hierarchical comments to divide and organize your files.
+* Try to make comments concise and intuitive.
+* It’s a good idea to configure your editor to provide you with shortcuts to output 
+  agreed-upon comment patterns.
+
+###Example:
 
 ```css
 /* ==========================================================================
-   Section comment block
+  
+   Section comment block: with example project specs
+   
+   Project:	Exmaple Project
+   Version:	1.1
+   Last change:	05/02/08
+   Primary use:	Magazine
+   
    ========================================================================== */
+   
+   
+/* ==========================================================================
+   Section Introductory comment block : Short
+   ========================================================================== */
+
 
 /* Sub-section comment block
    __________________________________________________________________________ */
+   
+   
+/* 
+ * Comment on multiple lines
+ *
+ * This is an Example of a long comment that
+ * spans multiple line.
+ *
+ * Use this format for long descriptions and 
+ * more detailed documentation 
+ */
+
 
 /* Basic comment */
 ```
