@@ -8,6 +8,7 @@
 3. [Formatting](#formatting)
 4. [Naming Convensitons](#naming-conventions)
 5. [Comments](#comments)
+6. [Overrides](#overrides)
 
 
 <a name="principles"></a>
@@ -82,7 +83,7 @@
 * It’s a good idea to configure your editor to provide you with shortcuts to output 
   agreed-upon comment patterns.
 
-### Example:
+#### Example:
 
 ```css
 /* ==========================================================================
@@ -115,3 +116,13 @@
 
 /* Basic comment */
 ```
+
+<a name="overrides"></a>
+## 5. Overrides
+
+* Avoid using '!important' unless absolutely necessary.
+* Try not to override pre-existing styles, but rather provide a unique selector 
+  or rethink your structure and it's modularity.
+* Try to avoid chaining selectors '.myselector.another.and-another' but 
+  rather create a new specific class.
+
