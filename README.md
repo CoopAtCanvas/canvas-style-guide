@@ -42,7 +42,7 @@
 * Configure your IDE to use soft-tabs with a two space indent. Spaces guarantee code 
   will renders the same all environment.
 * Trim trailing white spaces.
-* Add a space after the : in property declarations.
+* Add a space after the `:` in property declarations.
 * Separate each ruleset by a blank line.
 * Place individual selectors on a single line.
 * Place closing braces of selectors on their own line.
@@ -54,7 +54,7 @@
 <a name="formatting"></a>
 ## 3. Formatting
 
-* Always use #HEX color codes, unless using rgb/rgba.
+* Always use #hex color codes, unless using rgb/rgba.
 * Do not specify units for 0 values. `margin: 0;`
 * Try to limit use of shorthand declarations to instances where you must explicitly set 
   all the available values.
