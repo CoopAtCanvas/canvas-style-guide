@@ -27,9 +27,11 @@
 
 
 * Strive to create loosely coupled, highly reusable code.
-* Keep your code readable and understandable.
+* Always keep extensibility in mind.
+* Maintain code that is easy read and understand.
 * All code in any code-base should look like a single person wrote it, even on a team 
   with many contributors.
+* When trying to fix an issue, consider removing code before adding to it.
 * It is important to strictly enforce the agreed-upon standards.
 
 
