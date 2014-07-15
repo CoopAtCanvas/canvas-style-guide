@@ -44,10 +44,9 @@
 * Trim trailing white spaces.
 * Add a space after the `:` in property declarations.
 * Separate each ruleset by a blank line.
-* Place individual selectors on a single line.
+* One selector per line, one rule per line
 * Place closing braces of selectors on their own line.
 * Include a space after each comma in comma-separated property or function values.
-* Place all selectors on their own line for readability and more accurate error handling.
 * Large blocks of single declarations can use a single-line format. In this case, a 
   space should be included after the opening brace and before the closing brace.
 
@@ -59,8 +58,8 @@
 * Try to limit use of shorthand declarations to instances where you must explicitly set 
   all the available values.
 * Arrange your selector’s properties in alphabetical order. This will ensure a simple 
-  and intuitive arrangement that is easily recognizable, simple to locate properties, 
-  and easy to recognize duplicates on long selectors. Sublime: ctrl + F5
+  and intuitive organization that is easily recognizable, simple search, and easy to 
+  recognize duplicates in long selectors. Sublime: ctrl + F5
 * Use px for font-size, because it offers absolute control over text. 
 * Use unit-less line-height. `line-height: 1.5;`
 * Try to use ems for all other values. `width: 40em;`
@@ -216,7 +215,12 @@ $break-large: 46.8em;
 * Keep SCSS partials limited to 500 lines.
 * Avoid nesting more than 50 lines.
 * Always place `@extend` statements on the first lines of a declaration block.
+* Always place regular styles in the middle.
 * Always place `@include` statements on the last lines of a declaration block.
+* Always place nested selectors after it's parents.
+* Use variables for all common numbers, and numbers with meaning.
+* Use Compass for all vendor prefixing
+* Consolodate all global Variables and Mixins into their own files. 
 
 
 <a name="organization"></a>
