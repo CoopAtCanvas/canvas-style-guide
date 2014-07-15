@@ -61,7 +61,7 @@
 * Use px for font-size, because it offers absolute control over text. 
 * Use unit-less line-height. `line-height: 1.5;`
 * Try to use ems for all other values. `width: 40em;`
-* Use double (“”) rather than single (‘’) quotation marks
+* Use double rather than single quotation marks. `input[type="text"]` not input[type='text']
 
 ```
 // Example spacing, using BEM syntax
