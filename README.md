@@ -6,6 +6,7 @@
 1. [Principles](#principles)
 2. [Whitespace](#whitespace)
 3. [Formatting](#formatting)
+4. [Formatting](#comments)
 
 
 <a name="principles"></a>
@@ -52,3 +53,17 @@
   its parent element, but instead is     based on a multiplier of the font-size.
 * Use ems for all other values.
 * Use double (“”) rather than single (‘’) quotation marks
+
+<a name="comments"></a>
+## 4. Comments 
+
+```css
+/* ==========================================================================
+   Section comment block
+   ========================================================================== */
+
+/* Sub-section comment block
+   __________________________________________________________________________ */
+
+/* Basic comment */
+```
