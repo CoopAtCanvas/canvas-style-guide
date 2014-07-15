@@ -63,6 +63,8 @@
 * Try to use ems for all other values. `width: 40em;`
 * Use double rather than single quotation marks. `input[type="text"]` not `input[type='text']`
 
+#### Example:
+
 ```
 // Example spacing, using BEM syntax
 .example {
@@ -172,6 +174,8 @@
   and modified. If Sprockets is available combine all media queries for production 
   with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.)
 
+#### Example:
+
 ```
 // Set Variables
 $break-small: 24em;
@@ -214,7 +218,8 @@ $break-large: 46.8em;
 <a name="organization"></a>
 ## 9. File Organization
 
-#### Structure
+#### Folder Structure:
+
 ```
 sass/ 
 | 
@@ -272,6 +277,8 @@ sass/
 
 * Include [normalize](http://necolas.github.io/normalize.css/) in every project as a foundation.
 * When possible `box-sizing: border-box` as a global reset.
+
+#### Example:
 
 ```
 // SCSS and Compass
