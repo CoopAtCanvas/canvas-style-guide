@@ -97,9 +97,10 @@
 * Strive to create loosely coupled, modular code that can be easily reused regardless of 
   its container or contents.
 * Do not use ID’s. The negligible performance difference is not worth the limitations.
-* When a classing is applied or used as a selector for JavaScript, use a class prefix with 
-  js-. Also make the selector’s name clearly represent it’s function. `.js-toggle-menu`.
-* Avoid adding additional styles to .js- prefixed selectors that are not part of their function 
+* When a class is applied or used as a selector for JavaScript, prefix the classwith js-.
+* Never reference js- prefixed class names from CSS files. js- are used exclusively from JS files.
+* Use the is- prefix for state rules that are shared between CSS and JS.
+* Make JS selector’s names clearly represent their function. `.js-toggle-menu`.
 
 
 <a name="comments"></a>
