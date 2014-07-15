@@ -162,8 +162,8 @@
 * Always build mobile first. This will greatly reduce the weight on mobile and 
   significantly reduces necessary overrides through media queries.
 * Always specify your media query breakpoints via variables.
-* Nest all media queries inside the original selector, allow them to be easily 
-* found and modified. If Sprockets is available combine all media queries for production 
+* Nest all media queries inside the original selector, allow them to be easily located
+  and modified. If Sprockets is available combine all media queries for production 
   with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.)
 
 ```
