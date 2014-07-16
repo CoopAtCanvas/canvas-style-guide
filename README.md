@@ -58,12 +58,14 @@
 * Do not specify units for 0 values. `margin: 0;`
 * Try to limit use of shorthand declarations to instances where you must explicitly set 
   all the available values.
-* Arrange your selector’s properties in alphabetical order. This will ensure a simple 
-  and intuitive organization that is easily recognizable, simple search, and easy to 
-  recognize duplicates in long selectors. Sublime: ctrl + F5
-* Use px for font-size, because it offers absolute control over text. 
+* Order properties:
+  1. _by related values_
+  2. _alphabetically_
 * Use unit-less line-height. `line-height: 1.5;`
-* Try to use ems for all other values. `width: 40em;`
+* Other units should tipically be in:
+  1. px
+  2. ems
+  3. %
 * Use double rather than single quotation marks. `input[type="text"]` not `input[type='text']`
 
 #### Example:
@@ -97,20 +99,22 @@
 
 * Use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) naming conventions.
 * Provide clear names for your selectors.
+* Do not unnecessarily abriviate selectors, and reduce readability.
 * Strive to create loosely coupled, modular code that can be easily reused regardless of 
   its container or contents.
-* Do not use ID’s. The negligible performance difference is not worth the limitations.
+* Avoid the use of ID’s. The negligible performance difference is not worth the limitations.
 * When a class is applied or used as a selector for JavaScript, prefix the class with js-.
-* Never reference js- prefixed class names from CSS files. js- are used exclusively from JS files.
+* Never reference js- prefixed class from a CSS file. js- should be used exclusively in JS files.
 * Use the is- prefix for state rules that are shared between CSS and JS.
-* Make JS selector’s names clearly represent their function. `.js-toggle-menu`.
+* Make JS selector’s names clearly represent their function. `.js-toggle-menu` , `.is-active`.
 
 
 <a name="comments"></a>
 ## 5. Comments
 
 * Well commented code is extremely important. Take time provide information about your 
-  code, it’s limitations, and any non-obvious information. 
+  code, it’s limitations, and any non-obvious information.
+* When possible, use KSS formatting to determine comment formatting and provide a style guide.
 * Always add an introductory comment to all partials to provide clarity about the files 
   contents and purpose.
 * Use hierarchical comments to divide and organize your files.
@@ -162,10 +166,11 @@
 ## 6. Overrides
 
 * Avoid using `!important` unless __absolutely necessary__.
-* Try not to override pre-existing styles, but rather provide a unique selector 
-  or rethink your structure and it's modularity.
+* Try to work with the cascade and avoid unecessary overrides.
 * Try to avoid chaining selectors `.myselector.another.and-another` but 
   rather create a new specific class.
+* Use .ie conditionals to set IE specific code.
+* Use Modernizr to provide feature classes and overrides.
 
 
 <a name="responsive"></a>
@@ -174,9 +179,11 @@
 * Always build mobile first. This will greatly reduce the weight on mobile and 
   significantly reduces necessary overrides through media queries.
 * Always specify your media query breakpoints via variables.
-* Nest all media queries inside the original selector, allow them to be easily located
+* Nest media queries inside the original selector, allow them to be easily located
   and modified. If Sprockets is available combine all media queries for production 
   with: [Sprockets Media Query Combiner.](https://github.com/aaronjensen/sprockets-media_query_combiner.)
+* When nesting creates readability issues, include your media quierys at the bottom
+  of that partial.
 
 #### Example:
 
