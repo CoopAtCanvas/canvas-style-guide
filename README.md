@@ -188,30 +188,35 @@
 #### Example:
 
 ```
-// Set Variables
-$break-small: 24em;
-$break-large: 46.8em;
+// Specify Variables
+$break-xs:  320px  !default;
+$break-sm:  580px  !default;
+$break-md:  768px  !default;
+$break-lg:  1024px !default;
+$break-xl:  1240px !default;
 
 // Create Mixin
-@mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: $break-small) { @content; }
-  }
-  @else if $media == medium-screens {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
-  }
-  @else if $media == wide-screens {
-    @media only screen and (min-width: $break-large) { @content; }
+$breakpoints: (
+  'xs': ( max-width: $break-sm - 1 ),
+  'sm': ( min-width: $break-sm ),
+  'md': ( min-width: $break-md ),
+  'lg': ( min-width: $break-lg ),
+  'xl': ( min-width: $break-xl )
+);
+
+@mixin breakpoint($name) {
+  @media #{inspect(map-get($breakpoints, $name))} {
+    @content;
   }
 }
 
-// Embed Query
+// Embed Mixin
 .example-class {
   float: left;
   width: 250px;
-  @include respond-to(handhelds)      { width: 100% ;}
-  @include respond-to(medium-screens) { width: 50%; }
-  @include respond-to(wide-screens)   { float: none; }
+  @include respond-to($break-sm) { width: 100%; }
+  @include respond-to($break-md) { width: 50%;  }
+  @include respond-to($break-lg) { float: none; }
 }
 ```
 
