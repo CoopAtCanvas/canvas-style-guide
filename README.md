@@ -58,9 +58,7 @@
 * Do not specify units for 0 values. `margin: 0;`
 * Try to limit use of shorthand declarations to instances where you must explicitly set 
   all the available values.
-* Order properties:
-  1. _by related values_
-  2. _alphabetically_
+* Order properties _alphabetically_.
 * Use unit-less line-height. `line-height: 1.5;`
 * Other units should tipically be in:
   1. px
@@ -90,6 +88,11 @@
       background: #CCC;
     }
   }
+}
+
+.example--variation {
+  @extend .example;
+  color: $blue;
 }
 ```
 
@@ -170,7 +173,7 @@
 * Try to avoid chaining selectors `.myselector.another.and-another` but 
   rather create a new specific class.
 * Use .ie conditionals to set IE specific code.
-* Use Modernizr to provide feature classes and overrides.
+* Use Modernizr when necessary to provide feature classes and overrides.
 
 
 <a name="responsive"></a>
@@ -226,7 +229,7 @@ $breakpoints: (
 * Avoid unnecessary nesting.
 * Keep your nesting limited to 3 levels.
 * Keep SCSS partials limited to 500 lines.
-* Avoid nesting more than 50 lines.
+* Avoid nesting more than 50 consecutive lines.
 * Always place `@extend` statements on the first lines of a declaration block.
 * Always place regular styles in the middle.
 * Always place `@include` statements on the last lines of a declaration block.
