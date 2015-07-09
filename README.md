@@ -299,8 +299,8 @@ sass/
 <a name="resets"></a>
 ## 10. Resets
 
-* Include [normalize](http://necolas.github.io/normalize.css/) in every project as a foundation.
-* When possible `box-sizing: border-box` as a global reset.
+* Include [normalize](http://necolas.github.io/normalize.css/) , or equivalent, in every project as a foundation.
+* When possible specify `box-sizing: border-box` as a global reset.
 
 #### Example:
 
